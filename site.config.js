@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "stargamer prores collection",
+    title: "stargamer prores collection ☁️",
     description: "welcome to my prores collection!",
     theme: "auto", // ['light', 'dark', 'auto']
   },
