@@ -76,7 +76,6 @@ const PostDetail: React.FC<Props> = ({ blockMap, data }) => {
         {data.type[0] === "Post" && (
           <>
             <Footer />
-            <CommentBox data={data} />
           </>
         )}
       </article>
