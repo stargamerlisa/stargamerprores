@@ -10,12 +10,6 @@ const CONFIG = {
     github: "",
     instagram: "",
   },
-  projects: [
-   {
-      name: ``,
-      href: "",
-    },
-  ],
   // blog setting (required)
   blog: {
     title: "stargamer prores collection ☁️",
