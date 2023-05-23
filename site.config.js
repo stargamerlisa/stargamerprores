@@ -3,7 +3,7 @@ const CONFIG = {
   profile: {
     name: "stargamer",
     image: "/20UMGIM12176.rgb.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "prores collector",
+    role: "master/prores collector",
     bio: "i love prores music videos.",
     email: "stargamerprores@gmail.com",
     linkedin: "",
@@ -12,7 +12,7 @@ const CONFIG = {
   },
   // blog setting (required)
   blog: {
-    title: "stargamer prores collection ☁️",
+    title: "stargamer prores",
     description: "welcome to my prores collection!",
     theme: "auto", // ['light', 'dark', 'auto']
   },
