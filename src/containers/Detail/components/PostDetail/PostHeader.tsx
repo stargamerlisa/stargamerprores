@@ -50,7 +50,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
             )}
           </div>
           {data.thumbnail && (
-            <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 mb-7 rounded-none overflow-visible">
+            <div className="relative w-full pb-[100%] lg:pb-[100%] bg-gray-200 dark:bg-zinc-700 mb-7 rounded-none overflow-visible">
               <Image
                 src={data.thumbnail}
                 className="object-cover"
