@@ -29,7 +29,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
             <div className="relative w-full pb-[100%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
               <Image
                 src={data.thumbnail}
-                className="fit-picture"
+                className="object-none"
                 layout="fill"
                 alt={data.title}
               />
