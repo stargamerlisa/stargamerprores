@@ -12,8 +12,8 @@ const CONFIG = {
   },
   // blog setting (required)
   blog: {
-    title: "stargamer prores",
-    description: "welcome to my prores collection!",
+    title: "stargamer",
+    description: "stargamer prores collection.",
     theme: "auto", // ['light', 'dark', 'auto']
   },
 
@@ -33,9 +33,9 @@ const CONFIG = {
 
   // plugin configuration (optional)
   googleAnalytics: {
-    enable: false,
+    enable: true,
     config: {
-      measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
+      measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "G-8B47SWBCM0",
     },
   },
   googleSearchConsole: {
