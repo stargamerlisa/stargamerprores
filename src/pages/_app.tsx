@@ -14,6 +14,22 @@ export type NextPageWithLayout<PageProps = {}> = NextPage<PageProps> & {
   getLayout?: (page: ReactElement) => ReactNode
 }
 
+<GoogleAnalytics measurementId="G-8B47SWBCM0" />
+
+<Script
+    strategy="afterInteractive"
+    src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${measurementId}');
+    `}
+</Script>
+  
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
