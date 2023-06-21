@@ -1,15 +1,16 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
 import { CONFIG } from "site.config"
+import { GA_TRACKING_ID } from '../lib/gtag'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang={CONFIG.lang}>
         <Head>
-                  {/* Global Site Tag (gtag.js) - Google Analytics */}
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=5540547155`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -17,7 +18,7 @@ class MyDocument extends Document {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '5540547155');
+                gtag('config', '${GA_TRACKING_ID}');
               `,
           <link
             rel="stylesheet"
