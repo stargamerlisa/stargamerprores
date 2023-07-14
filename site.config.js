@@ -4,8 +4,8 @@ const CONFIG = {
     name: "stargamer",
     image: "/20UMGIM12176.rgb.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "master/prores collector",
-    bio: "i post my collection on this site. contact: stargamer5@protonmail.com",
-    email: "stargamerprores@gmail.com",
+    bio: "i post my collection on this site. if you want to exchange/buy, e-mail me.",
+    email: "stargamer5@protonmail.com",
     linkedin: "",
     github: "",
     discord: "stargamer57"
