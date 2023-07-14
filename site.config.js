@@ -4,7 +4,7 @@ const CONFIG = {
     name: "stargamer",
     image: "/20UMGIM12176.rgb.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "master/prores collector",
-    bio: "i love prores music videos.",
+    bio: "i post my collection on this site. contact: stargamer5@protonmail.com",
     email: "stargamerprores@gmail.com",
     linkedin: "",
     github: "",
@@ -13,7 +13,7 @@ const CONFIG = {
   // blog setting (required)
   blog: {
     title: "stargamer",
-    description: "stargamer prores collection.",
+    description: "Stargamer Master/ProRes Collection",
     theme: "auto", // ['light', 'dark', 'auto']
   },
 
