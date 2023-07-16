@@ -8,7 +8,6 @@ const CONFIG = {
     email: "stargamer5@protonmail.com",
     linkedin: "",
     github: "",
-    discord: "stargamer57",
     instagram: "",
   },
   // blog setting (required)
