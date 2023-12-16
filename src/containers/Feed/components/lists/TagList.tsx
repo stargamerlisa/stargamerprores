@@ -1,15 +1,15 @@
-import { TTags } from "@customTypes/index"
-import { useRouter } from "next/router"
-import React from "react"
+import { TTags } from "@customTypes/index";
+import { useRouter } from "next/router";
+import React from "react";
 
 type Props = {
-  className?: string
-  data: TTags
-}
+  className?: string;
+  data: TTags;
+};
 
 const TagList: React.FC<Props> = ({ className, data }) => {
-  const router = useRouter()
-  const currentTag = router.query.tag || undefined
+  const router = useRouter();
+  const currentTag = router.query.tag || undefined;
 
   const handleClickTag = (value: any) => {
     // delete
@@ -19,7 +19,7 @@ const TagList: React.FC<Props> = ({ className, data }) => {
           ...router.query,
           tag: undefined,
         },
-      })
+      });
     }
     // add
     else {
@@ -28,15 +28,17 @@ const TagList: React.FC<Props> = ({ className, data }) => {
           ...router.query,
           tag: value,
         },
-      })
+      });
     }
-  }
+  };
+
+  const sortedTags = Object.keys(data).sort(); // Sort tags alphabetically
 
   return (
     <div className={className}>
       <div className="hidden lg:block p-1 mb-3 dark:text-white">🏷️ tags</div>
       <ul className="gap-1 flex mobile-x-scroll lg:block mb-6">
-        {Object.keys(data).map((key) => (
+        {sortedTags.map((key) => (
           <li
             key={key}
             className={`cursor-pointer text-sm p-1 px-4 my-1 flex-shrink-0 rounded-xl text-gray-500 dark:text-white hover:bg-gray-200 dark:hover:bg-zinc-800 ${
@@ -50,7 +52,7 @@ const TagList: React.FC<Props> = ({ className, data }) => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default TagList
+export default TagList;
